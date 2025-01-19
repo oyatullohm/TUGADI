@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamollhon</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 style="font-family: Oswald 'Lucida Grande',;
+            font-size: 4.6rem;
+            color: #204060;
+            text-align: center;
+            font-weight: 500;">ECL LANGUAGE EXAMINATION VALIDATION</h1>
+            <button style="margin-top: 10px;"><a href="#">This certificate is valid.</a></button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{ certificate.name }}</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Language:</td>
+                        <td>{{ certificate.language  }}</td>
+                    </tr>
+                    <tr>
+                        <td>Level:</td>
+                        <td>{{ certificate.level }}</td>
+                    </tr>
+                    <tr>
+                        <td>Type:</td>
+                        <td>{{ certificate.centre_no1  }}</td>
+                    </tr>
+                    <tr>
+                        <td>Centre No:</td>
+                        <td>{{ certificate.centre_no2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td>{{ certificate.date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+</body>
+</html>
